@@ -1,9 +1,12 @@
-﻿namespace DesignPatterns
+﻿using System;
+
+namespace DesignPatterns
 {
-    internal class Program
+    internal static class Program
     {
         private static void Main()
         {
+            Console.WriteLine("Hello world");
         }
     }
 }
