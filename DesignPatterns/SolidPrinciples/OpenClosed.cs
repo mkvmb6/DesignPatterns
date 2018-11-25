@@ -32,6 +32,11 @@ namespace SolidPrinciples
             Size = size;
             Name = name;
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(Name)}: {Name}, {nameof(Size)}: {Size}, {nameof(Color)}: {Color}";
+        }
     }
 
     //A class should be open for extension and closed for modification. But below class needs modification every time a different type of filter is required. Which means it is not open for extension.
@@ -164,7 +169,7 @@ namespace SolidPrinciples
         {
             foreach (var product in products)
             {
-                Console.WriteLine($"- {product.Name}[ Color: {product.Color}, Size: {product.Size}]");
+                Console.WriteLine(product.ToString());
             }
             Console.WriteLine();
         }
