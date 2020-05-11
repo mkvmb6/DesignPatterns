@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.StrategyPattern.DuckDriver</StartupObject>
+    <StartupObject>DesignPatterns.Factory.PizzaStoreDriver</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,50 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuilderPattern.cs" />
+    <Compile Include="Factory\Ingredients\BlackOlives.cs" />
+    <Compile Include="Factory\Ingredients\ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="Factory\Ingredients\EggPlant.cs" />
+    <Compile Include="Factory\Ingredients\FreshClam.cs" />
+    <Compile Include="Factory\Ingredients\FrozenClam.cs" />
+    <Compile Include="Factory\Ingredients\Garlic.cs" />
+    <Compile Include="Factory\Ingredients\ICheese.cs" />
+    <Compile Include="Factory\Ingredients\IClam.cs" />
+    <Compile Include="Factory\Ingredients\IDough.cs" />
+    <Compile Include="Factory\Ingredients\IPepperoni.cs" />
+    <Compile Include="Factory\Ingredients\IPizzaIngredientFactory.cs" />
+    <Compile Include="Factory\Ingredients\ISauce.cs" />
+    <Compile Include="Factory\Ingredients\IVeggie.cs" />
+    <Compile Include="Factory\Ingredients\MarinaraSauce.cs" />
+    <Compile Include="Factory\Ingredients\MozzarellaCheese.cs" />
+    <Compile Include="Factory\Ingredients\Mushroom.cs" />
+    <Compile Include="Factory\Ingredients\NyPizzaIngredientFactory.cs" />
+    <Compile Include="Factory\Ingredients\Onion.cs" />
+    <Compile Include="Factory\Ingredients\PlumTomatoSauce.cs" />
+    <Compile Include="Factory\Ingredients\RedPepper.cs" />
+    <Compile Include="Factory\Ingredients\ReggianoCheese.cs" />
+    <Compile Include="Factory\Ingredients\SlicedPepperoni.cs" />
+    <Compile Include="Factory\Ingredients\Spinach.cs" />
+    <Compile Include="Factory\Ingredients\ThickCrustDough.cs" />
+    <Compile Include="Factory\Ingredients\ThinCrustDough.cs" />
+    <Compile Include="Factory\PizzaStoreDriver.cs" />
+    <Compile Include="Factory\Pizzas\CheezePizza.cs" />
+    <Compile Include="Factory\Pizzas\ChicagoStylePizzas\ChicagoCheesePizza.cs" />
+    <Compile Include="Factory\Pizzas\ChicagoStylePizzas\ChicagoClamPizza.cs" />
+    <Compile Include="Factory\Pizzas\ChicagoStylePizzas\ChicagoPepperoniPizza.cs" />
+    <Compile Include="Factory\ChicagoPizzaStore.cs" />
+    <Compile Include="Factory\Pizzas\ChicagoStylePizzas\ChicagoVeggiePizza.cs" />
+    <Compile Include="Factory\Pizzas\ClamPizza.cs" />
+    <Compile Include="Factory\Pizzas\NyStylePizzas\NyCheezePizza.cs" />
+    <Compile Include="Factory\Pizzas\NyStylePizzas\NyClamPizza.cs" />
+    <Compile Include="Factory\Pizzas\NyStylePizzas\NyPepperoniPizza.cs" />
+    <Compile Include="Factory\NyPizzaStore.cs" />
+    <Compile Include="Factory\Pizzas\NyStylePizzas\NyVeggiePizza.cs" />
+    <Compile Include="Factory\Pizzas\PepperoniPizza.cs" />
+    <Compile Include="Factory\Pizzas\Pizza.cs" />
+    <Compile Include="Factory\PizzaStore.cs" />
+    <Compile Include="Factory\PizzaType.cs" />
+    <Compile Include="Factory\SimplePizzaFactory.cs" />
+    <Compile Include="Factory\Pizzas\VeggiePizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\MySingleton.cs" />
